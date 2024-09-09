@@ -1,16 +1,23 @@
-<! doctype HTML>
-<html>
-
-<script src = " https://aframe.io/releases/0.9.2/aframe.min.js "> </script>
-<script src = " https://raw.githack.com/jeromeetienne/AR.js /2.0.5/aframe/build/aframe-ar.js "> </script>
-
-<body style = 'margin: 0px; overflow: scroll; '>
-  <a-scene embedded arjs =' patternRatio: 0.7 '>
-    <a-marker type =' pattern 'url =' path / to / pattern-marker.patt '>
-       <a-box position =' 0 0,5 0 'material =' opacity: 0.5; '> </a-box>
-    </a-marker>
-    <a-entity camera> </a-entity>
-  </a-scene>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>AR in Web</title>
+</head>
+<body>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	<a-scene embedded arjs>
+		<a-marker preset="hiro">
+			<a-entity
+				position="0 0 0"
+				scale="1 1 1"
+				gltf-model="ar/2024-09-08%2015.36.07.gltf"
+			></a-entity>
+		</a-marker>
+		<a-entity camera></a-entity>
+	</a-scene>
 </body>
-
 </html>
